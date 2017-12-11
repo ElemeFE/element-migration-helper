@@ -1,7 +1,7 @@
 {
   "name": "element-migration-helper",
   "version": "0.0.0",
-  "description": "CLI tool to aid in migration form Element-UI 1.x to 2.0",
+  "description": "CLI tool to aid in migration from Element-UI 1.x to 2.0",
   "main": "index.js",
   "bin": {
     "element-migration-helper": "index.js"
