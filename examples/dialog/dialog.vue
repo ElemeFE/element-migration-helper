@@ -1,6 +1,7 @@
 <template>
   <div class="template">
     <el-dialog
+      v-model="true"
       size="large">this is template body</el-dialog>
   </div>
 </template>
