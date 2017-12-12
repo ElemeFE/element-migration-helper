@@ -3,7 +3,7 @@
 var chalk = require('chalk');
 
 module.exports = {
-  pattern: /<el-dialog.*size\s*=\s*['"`]/,
+  pattern: /\bsize\s*=\s*['"`].*['"`]/,
   warning: function(match) {
     return {
       reason: 'The <el-dialog> component no longer has size attributes',

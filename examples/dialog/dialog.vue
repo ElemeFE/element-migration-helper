@@ -1,6 +1,7 @@
 <template>
   <div class="template">
-    <el-dialog size="large">this is template body</el-dialog>
+    <el-dialog
+      size="large">this is template body</el-dialog>
   </div>
 </template>
 <script type="text/ecmascript-6" lang="babel">
