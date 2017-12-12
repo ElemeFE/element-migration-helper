@@ -3,7 +3,7 @@
 var chalk = require('chalk');
 
 module.exports = {
-  pattern: /\bv-model\s*=\s*['"`].*['"`]/,
+  pattern: /\bv-model\s*=\s*['"`{].*['"`}]/,
   warning: function(match) {
     return {
       reason: 'Now the visibility of Dialog cannot be controlled by v-model',
