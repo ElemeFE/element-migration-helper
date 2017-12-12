@@ -32,12 +32,13 @@ module.exports = function(fileData) {
     return false;
   });
 
-  return matchedRules.some(function(rule) {
+  var isWarning = false;
+  matchedRules.forEach(function(rule) {
     var warning = assertRule(fileData, rule);
     if (warning) {
       reportWarning(fileData, warning, rule);
-      return true;
+      isWarning = true;
     }
-    return false;
   })
+  return isWarning;
 }
